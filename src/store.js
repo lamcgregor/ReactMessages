@@ -1,12 +1,14 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import promiseMiddleware from 'redux-promise-middleware';
+import reducer from './reducers/index';
+import thunk from 'redux-thunk';
 
-export function reducer(state, action = {}) {
-  return Object.assign({}, state, {
-    messages: action.payload
-  });
-}
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-export const store = createStore(reducer, {}, applyMiddleware(
-  promiseMiddleware()
-));
+export const store = createStore(
+  reducer,
+  {},
+  composeEnhancers(
+    applyMiddleware(promiseMiddleware(), thunk)
+  )
+);

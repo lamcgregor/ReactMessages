@@ -1,0 +1,13 @@
+.message-list {
+    padding: 2rem 0;
+    max-width: 700px;
+    background-color: aliceblue;
+    margin: 2rem auto;
+}
+.title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 0;
+    padding: 0 2rem;
+    text-transform: uppercase;
+}

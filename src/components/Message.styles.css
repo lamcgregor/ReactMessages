@@ -1,0 +1,31 @@
+.message {
+    padding: 1rem 2rem;
+    overflow: auto;
+}
+.message:nth-child(odd) {
+    background-color: #ccc;
+}
+
+.image {
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5%;
+    width: 20%;
+    margin-bottom: 1rem;
+    max-width: 75px;
+}
+.content {
+    display: inline-block;
+    vertical-align: middle;
+    width: 75%;
+}
+
+.date {
+    color: #333;
+    float: right;
+}
+.email {
+    float: left;
+    font-size: 0.8rem;
+}
