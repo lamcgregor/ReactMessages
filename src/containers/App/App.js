@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { getChatLog, setActiveMessage } from '../../actions/messages';
 import { getMembersList } from '../../actions/members';
 
-import MessageList from '../../components/MessageList';
+import MessageList from '../../components/MessageList/MessageList';
 
 class App extends Component {
   componentDidMount() {

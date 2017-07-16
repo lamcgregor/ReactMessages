@@ -1,5 +1,5 @@
 import React from 'react';
-import { formatDate } from '../utilities/index';
+import { formatDate } from '../../utilities/index';
 
 import './Message.styles.css';
 

@@ -1,6 +1,6 @@
 import * as actions from '../actions/messages';
 
-const initialState = {
+export const initialState = {
   results: [],
   isFetching: false,
   error: false,
