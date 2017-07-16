@@ -23,7 +23,10 @@ const MessageList = ({ messages, members, onHover }) => {
     <div className='message-list'>
       <h1 className='title'>Messages</h1>
       {messages.isFetching &&
-        <div>Loading...</div>
+        <div className='interstitial'>Loading...</div>
+      }
+      {messages.error &&
+        <div className='interstitial'>Loading failed: {messages.error}</div>
       }
       {content}
     </div>
